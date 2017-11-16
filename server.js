@@ -64,11 +64,13 @@ const authToken = 'a9d53929a8bf32774108b4644960dba8';
 const client = require('twilio')(accountSid, authToken);
 
 
+// heroku logs --tail  --app immense-sierra-43453
 
 // Logic to text/receive/update reminders
 clock = () => {
 	// Get the current minute
 	let minutes = moment().format('mm');
+	console.log(minutes);
 
 	if(minutes == 00 || minutes == 30) {
 		// Query the db to check for tasks every 0 and 30 minutes 
