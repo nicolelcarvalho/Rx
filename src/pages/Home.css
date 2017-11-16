@@ -1,18 +1,11 @@
 
 .Homediv{
-	background-image: url("https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSskjzcBgOUO3Wb6aaIPJLnN2ixt2nEdeVULnLZskvtSvX9sRUy");
-	background-repeat: no-repeat;
-	background-position: center;
-	background-size:cover;
+	background-color: #fff;
 	width:100%;
-	
 }
 
 .Home{
-		background-image: url("https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSskjzcBgOUO3Wb6aaIPJLnN2ixt2nEdeVULnLZskvtSvX9sRUy");
-	background-repeat: no-repeat;
-	background-position: center;
-	background-size:cover;
+	background-color: #fff;
 	width:100%;
 	height:100vh;
 	background-color:#f3f3f5;
