@@ -2,7 +2,6 @@ import React from 'react';
 import PatientForm from '../components/PatientForm';
 import DisplayReminders from '../components/DisplayReminders';
 import Clock from "../components/Clock";
-import Carousel from "../components/Carousel";
 import Jumbotrons from "../components/Jumbotron";
 import Footer from "../components/Footer";
 import GridHome from "../components/Grid";
