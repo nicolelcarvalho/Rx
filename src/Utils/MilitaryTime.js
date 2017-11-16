@@ -36,8 +36,8 @@ var hours = time.split(":")[0]
 var minutes = time.split(":")[1]
 
 
-console.log("hours: " + hours);
-console.log("minutes: " + minutes);
+// console.log("hours: " + hours);
+// console.log("minutes: " + minutes);
 
 let amPm;
 let hoursStd;
@@ -59,7 +59,7 @@ if (hoursInt > 12){
 
 let standardTime = hoursStd + ":" + minutes + " " + amPm;
 
-console.log("final display: " + standardTime);
+// console.log("final display: " + standardTime);
 
 return standardTime;
 }
