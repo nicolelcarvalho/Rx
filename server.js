@@ -201,9 +201,17 @@ app.post('/sms', (req, res) => {
 //==================================Routes=========================================
 
 // // Main "/" Route. This will redirect the user to our rendered React application
+app.use(express.static("./build"));
+
 app.get("*", function(req, res) {
-  res.sendFile(__dirname + "/build/static/index.html");
+  res.sendFile(__dirname + "./build/index.html");
 });
+
+// app.get("*", function(req, res) {
+//   const index = path.join(__dirname, 'build', 'index.html');
+//   res.sendFile(index);
+// });
+
 
 
 
@@ -212,5 +220,4 @@ app.get("*", function(req, res) {
 app.listen(PORT, function() {
   console.log("App running on port " + PORT + "!");
 });
-
 
