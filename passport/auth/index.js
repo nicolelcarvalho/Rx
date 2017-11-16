@@ -279,10 +279,6 @@ var d = new Date();
 			for (let j = 0; j < remindersArray.length; j++) {
 				let reminderId = remindersArray[j];
 
-
-				//***** ADD IN TIME TO QUERY!!!! USING WITHOUT FOR TESTING PURPOSES ***** //
-
-
 				// Query into db to find the id of each reminder based on what day and time it is as well as if the responseReceived = false
 				Reminder.find({_id: reminderId, dayToComplete: day, timeToComplete: timeDue, responseReceived: false, responseLate: false}).then(function(reminders) {
 					// console.log(reminders + " " + patientPhone);
@@ -290,11 +286,6 @@ var d = new Date();
 						// Get the body of the reminderMessage. Can also get the reminder photo
 						let textMessage = reminders[i].reminderMessage;
 						let pictureUrl = reminders[i].reminderImage;
-
-					// console.log(textMessage + " " + patientPhone);
-
-
-					// ********* THIS WORKS! *********
 
 					// Text the patients. 
 					// If the pictureUrl is true, send a picture text message
@@ -325,8 +316,6 @@ var d = new Date();
 		}
 	}); // End Patient.find query
 
-
-	// 9084513744
 
    
     // Then, we query all users, get their phone numbers
