@@ -200,6 +200,5 @@ router.post("/addReminder", (req, res) => {
 
 });
 
-}
 
 module.exports = router;

@@ -12,6 +12,7 @@ const logger = require("morgan");
 const mongoose = require("mongoose");
 const path = require("path");
 const PORT = process.env.PORT || 3001;
+const twilio = require('twilio');
 const moment = require('moment');
 const session = require('express-session');
 const MongoStore = require('connect-mongo')(session);
@@ -20,7 +21,6 @@ const dbConnection = require('./db');
 const User = require('./db/models/User')
 const Patient = require('./db/models/Patients')
 const Reminder = require('./db/models/Reminders')
-
 
 
 //================ MIDDLEWARE ================= //
@@ -40,6 +40,7 @@ app.use(
 	})
 )
 
+// app.use(express.static("build"));
 
 //================ PASSPORT ================= //
 app.use(passport.initialize())
@@ -55,11 +56,13 @@ app.use(function(err, req, res, next) {
 	res.status(500)
 })
 
+
 //==================================Twilio=========================================
-const twilio = require('twilio');
+
 const accountSid = 'AC48ce06d27e69dece3a0702596ee55a08';
 const authToken = 'a9d53929a8bf32774108b4644960dba8';
 const client = require('twilio')(accountSid, authToken);
+
 
 
 // Logic to text/receive/update reminders
@@ -247,14 +250,15 @@ queryDB = () => {
 
     	  }
     });
-
 }
+
+
+
 
 
 //==================================Twilio Respond to Text=========================================
 
 const MessagingResponse = require('twilio').twiml.MessagingResponse;
-
 
 app.post('/sms', (req, res) => {
   const twiml = new MessagingResponse();
@@ -330,6 +334,14 @@ app.use("/static", express.static(path.join(__dirname, "./build/static")));
 app.get("/", function(req, res) {
   res.sendFile(__dirname + "/build/index.html");
 });
+
+
+// app.get("*", function(req, res) {
+//   const index = path.join(__dirname, 'build', 'index.html');
+//   res.sendFile(index);
+// });
+
+
 
 
 
