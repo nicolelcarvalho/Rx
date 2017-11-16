@@ -336,15 +336,6 @@ app.get("/", function(req, res) {
 });
 
 
-// app.get("*", function(req, res) {
-//   const index = path.join(__dirname, 'build', 'index.html');
-//   res.sendFile(index);
-// });
-
-
-
-
-
 // Start the server
 app.listen(PORT, function() {
   console.log("App running on port " + PORT + "!");
