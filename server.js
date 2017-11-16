@@ -204,7 +204,7 @@ app.post('/sms', (req, res) => {
 app.use("/static", express.static(path.join(__dirname, "./build/static")));
 
 app.get("/", function(req, res) {
-  res.sendFile(path.join(__dirname, "./build/index.html"));
+  res.sendFile(__dirname + "./build/index.html");
 });
 
 // app.get("*", function(req, res) {
