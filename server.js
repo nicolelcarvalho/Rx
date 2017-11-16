@@ -118,7 +118,7 @@ queryDB = () => {
 
 	Patient.find({}).then(function(patients) {
 
-var d = new Date();
+		var d = new Date();
 		var currentMinutes = d.getMinutes();
 
 		if (currentMinutes >= 30) {
@@ -248,6 +248,7 @@ var d = new Date();
     	  }
     });
 
+}
 
 
 //==================================Twilio Respond to Text=========================================
