@@ -36,9 +36,9 @@ constructor() {
   render() {
     return (
         <Jumbotron className="patientProfile">
-          <h1 className="profileText">{this.state.patientName}</h1>
-          <h3 className="profileText">{this.state.patientPhone}</h3>
-          <h3 className="profileText">{this.state.patientStreet}, {this.state.patientCity}, {this.state.patientState} {this.state.patientZip}</h3>
+          <h2 className="profileText">{this.state.patientName}</h2>
+          <h4 className="profileText">{this.state.patientPhone}</h4>
+          <h4 className="profileText">{this.state.patientStreet}, {this.state.patientCity}, {this.state.patientState} {this.state.patientZip}</h4>
         </Jumbotron>
 
     );

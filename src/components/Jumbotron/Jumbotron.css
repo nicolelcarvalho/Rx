@@ -1,25 +1,63 @@
-h1 {
-  font-weight: 600;
-  font-variant: small-caps;
-}
+
 #text {
-  font-variant: small-caps;
-  color:#337ab7;
-  font-size:25px;
+  color: #384a83;
+  font-size: 20px;
+  line-height: 1.5;
+  width: 40%;
+  background: #fff;
+  position: absolute;
+  top: 225px;
+  left: 20px;
+  padding: 25px;
+  opacity: .8;
 }
-.leftimage {
-  height: 60px;
-  width: 60px;
-  position:relative;
-  right:50px;
-  bottom:20px;
+
+.learn-btn {
+  margin-top: 15px;
+  background-color: #26b999;
+  color: #fff;
 }
-  
-.righttext{
-    position:relative;
-    display:inline-block;
+
+#learn-more {
+  padding-top: 40px;
+  padding-bottom: 40px;
 }
-.Jumbotron {
-    padding-top:80px;
-    background-color:#fff;
+
+.icon-info {
+  text-align: center;
+  border-radius: 5px;
+}
+
+.icon-title {
+  padding-bottom: 20px;
+}
+
+.caption {
+  padding-top: 30px;
+}
+
+.main-image {
+  height: 600px;
+  width: 100%;
+}
+
+
+.grid{
+  margin: 10px auto 90px auto;
+}
+
+.column{
+  padding:0px 40px 0px 40px;
+}
+
+.gridContainer{
+  margin:0;
+}
+
+.rowGrid{
+  width: 100vw
+}
+
+.grid{
+  margin: 0px;
 }

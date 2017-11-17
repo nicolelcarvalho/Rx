@@ -100,7 +100,7 @@ const patientId = req.params.patientId;
   Patient.find({_id:patientId}).then(function(patient) {
   	reminderId = patient[0].reminders;
 
-  Reminder.find({_id: reminderId}).sort({ timeToComplete: 1 }).then(function(reminders) {
+  Reminder.find({_id: reminderId}).sort({ timeToComplete: -1 }).then(function(reminders) {
     res.json(reminders);
   }).catch(function(err) {
     res.json(err);
@@ -119,7 +119,7 @@ console.log("Getting reminders route")
   Patient.find({_id: patientId}).then(function(patient) {
   	reminderId = patient[0].reminders;
 
-  Reminder.find({_id: reminderId, dayToComplete: today}).sort({ timeToComplete: 1 }).then(function(reminders) {
+  Reminder.find({_id: reminderId, dayToComplete: today}).sort({ timeToComplete: -1 }).then(function(reminders) {
     res.json(reminders);
   }).catch(function(err) {
     res.json(err);

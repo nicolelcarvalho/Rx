@@ -21,18 +21,18 @@ const DisplayLinks = props => {
 					    </Navbar.Header>
 					    <Navbar.Collapse>
 					      <Nav pullRight>
-					        <NavItem eventKey={1}><Link to="/">
-					          <a><span className="glyphicon glyphicon-home">  Home</span></a></Link>
+					        <NavItem className="nav-item" eventKey={1}><Link to="/">
+					          <span className="glyphicon glyphicon-home"><a className="nav-item">  Home</a></span></Link>
 					         </NavItem>
 
-					        <NavItem eventKey={2}><Link to="#" onClick={props._logout}>
-					          <a><span className="glyphicon glyphicon-share-alt"> Logout</span></a>
+					        <NavItem className="nav-item" eventKey={2}><Link to="#" onClick={props._logout}>
+					          <span className="glyphicon glyphicon-share-alt"><a className="nav-item">  Logout</a></span>
 					         </Link>
 					         </NavItem>
 
 
-					         <NavItem eventKey={3}><Link to="/patient">
-					          <a><span className="glyphicon glyphicon-user">  Patient-Profile</span></a></Link>
+					         <NavItem className="nav-item" eventKey={3}><Link to="/patient">
+					          <span className="glyphicon glyphicon-user"><a className="nav-item">  Patient-Profile</a></span></Link>
 					         </NavItem> 
 					      </Nav>
 					    </Navbar.Collapse>
@@ -50,13 +50,13 @@ const DisplayLinks = props => {
 					    <Navbar.Collapse>
 					      <Nav pullRight className="navBtns">
 					        <NavItem eventKey={1}><Link to="/">
-					          <a><span className="glyphicon glyphicon-home">  Home</span></a></Link>
+					          <span className="glyphicon glyphicon-home"><a className="nav-item">  Home</a></span></Link>
 					         </NavItem>
 					        <NavItem eventKey={2}><Link to="/login">
-					          <a><span className="glyphicon glyphicon-log-in">  Login</span></a></Link>
+					          <span className="glyphicon glyphicon-log-in"><a className="nav-item">  Login</a></span></Link>
 					         </NavItem>
 					         <NavItem eventKey={3}><Link to="/signup">
-					          <a><span className="glyphicon glyphicon-user">  Signup</span></a></Link>
+					          <span className="glyphicon glyphicon-user"><a className="nav-item">  Signup</a></span></Link>
 					         </NavItem> 
 					      </Nav>
 					    </Navbar.Collapse>

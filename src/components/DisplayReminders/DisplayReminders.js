@@ -84,25 +84,26 @@ constructor() {
                       <Well key={reminder._id} id={reminder._id} className={"remindersWell " + (reminder.responseReceived ? " greenBG" : "") + (reminder.responseLate ? " redBG" : "")}>
                         <Row className="mainRow">
                           <Col sm={2}>
-                            <h2 className="timeToComplete">{MilitaryTime.convertMilitaryToStandardTime(reminder.timeToComplete)}</h2>
+                            <h3 className="timeToComplete">{MilitaryTime.convertMilitaryToStandardTime(reminder.timeToComplete)}</h3>
                           </Col>
                           <Col sm={8}>
-                            <h1 className="toDo">{reminder.reminderTitle}</h1>
+                            <h2 className="toDo">{reminder.reminderTitle}</h2>
                           </Col>
                           <Col sm={2}>
                           </Col>
                         </Row>
+                        <hr/>
                         <Row className="infoRow">
                           <Col sm={4}>
-                            <h3>Dosage: {reminder.medicationDosage }</h3>
-                          </Col>
-                          <Col sm={4}> 
-                            <h3>Refill Date:</h3>
-                            <h4>{reminder.medicationRefillDate}</h4>
+                            <h4>Message:</h4>
+                            <h4>{reminder.reminderMessage}</h4>
                           </Col>
                           <Col sm={4}>
-                            <h3>Message:</h3>
-                            <h4>{reminder.reminderMessage}</h4>
+                            <h4>Dosage: {reminder.medicationDosage }</h4>
+                          </Col>
+                          <Col sm={4}> 
+                            <h4>Refill Date:</h4>
+                            <h4>{reminder.medicationRefillDate}</h4>
                           </Col>
                         </Row>
                       </Well>

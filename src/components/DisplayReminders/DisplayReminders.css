@@ -1,27 +1,27 @@
 
 .todaysReminders{
-	margin: 20px, 0, 90px, ;
+	padding-top: 30px;
+	margin: 0 auto;
 }
 
 .remindersh1{
-	font-size:50px;
+	font-size: 30px;
 }
 
 .remindersWell{
-	padding:0px;
-	padding-bottom:10px;
+	padding: 15px;
 	margin: 20px 40px;
 	border:0;
 	box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
-	background-color: rgb(95, 104, 119); 
-	color:white;
+	background-color: #4d6684; 
+	color: #fff;
 }
 
 .redBG {
-  background-color: rgb(201, 84, 78);
+  background-color: #cb4e44;
 
 }
 
 .greenBG {
-		background-color: rgb(76, 126, 206); 
+	background-color: #26b999; 
 }

@@ -6,14 +6,30 @@
 
 .navbar{
 	margin: 0;
-	 box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+	box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+	font-family: 'Barlow', sans-serif;
+}
+
+.nav-item {
+	font-family: 'Barlow', sans-serif;
+}
+
+.nav-item a {
+	color: #4d6684;
+	text-decoration: none;
+}
+
+.nav-item {
+	color: #4d6684;
 }
 
 .navbar-brand {
 	font-size: 30px;
 	font-family: 'Barlow', sans-serif;
+	color: #cb4e44;
 }
 
 .glyphicon {
+	color: #4d6684;
 	font-size:16px;
 }
