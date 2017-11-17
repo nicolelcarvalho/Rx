@@ -20,7 +20,7 @@ RxMinder is designed to give you peace of mind while your loved one maintains th
 
 ### Home Page prior to signing up and logging in:
 ![homepage](demos/home_page.png)
-![homepage2](demos/homepage2.png)
+![homepage2](demos/home_page2.png)
 
 ### Creating a Patient Profile and Setting up Reminders:
 ![creatingreminders](demos/creating_reminders.png)
