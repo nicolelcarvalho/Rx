@@ -22,7 +22,7 @@ RxMinder is designed to give you peace of mind while your loved one maintains th
 ![homepage](demos/home_page.png)
 ![homepage2](demos/home_page2.png)
 
-### Creating a Patient Profile and Setting up Reminders:
+### Setting up Reminders for a Patient:
 ![creatingreminders](demos/creating_reminders.png)
 
 ### When Patient Receives a Text Reminder:
@@ -34,6 +34,8 @@ RxMinder is designed to give you peace of mind while your loved one maintains th
 ### User Receives Text when Patient Misses Reminder:
 ![textalert](demos/text_alert.png)
 
+### Missed Reminders turn Red & Completed Reminders turn Green
+![reminderimage](demos/missed_and_completed.png)
 
 ## Tech used
 - React.js
