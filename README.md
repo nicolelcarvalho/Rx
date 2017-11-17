@@ -26,13 +26,13 @@ RxMinder is designed to give you peace of mind while your loved one maintains th
 ![creatingreminders](demos/creating_reminders.png)
 
 ### When Patient Receives a Text Reminder:
-![textreminder](text_reminder.png)
+![textreminder](demos/text_reminder.png)
 
 ### User Dashboard: When Patient Misses Reminder and Responds to Reminder:
-![reminderdemo](missing_and_completing_reminder.gif)
+![reminderdemo](demos/missing_and_completing_reminder.gif)
 
 ### User Receives Text when Patient Misses Reminder:
-![textalert](text_alert.png)
+![textalert](demos/text_alert.png)
 
 
 ## Tech used
